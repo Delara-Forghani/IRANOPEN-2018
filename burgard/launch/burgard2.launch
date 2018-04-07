@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<launch>
+
+
+ <node pkg="burgard" type="Permission_granter.py" name="permission" output="screen" respawn="true"  />
+
+
+<group ns="robot0">
+        <param name="namespace" value="robot0" />
+        <param name="number_of_robots" value="6" />
+    <node pkg="burgard" type="burgard_exploration_srv.py" name="burgard1" output="screen" respawn="true"  />
+
+    </group>
+
+  <group ns="robot1">
+      <param name="namespace" value="robot1" />
+      <param name="number_of_robots" value="6" />
+  <node pkg="burgard" type="burgard_exploration_srv.py" name="burgard1" output="screen" respawn="true"  />
+
+  </group>
+
+
+  <group ns="robot2">
+      <param name="namespace" value="robot2" />
+      <param name="number_of_robots" value="6" />
+  <node pkg="burgard" type="burgard_exploration_srv.py" name="burgard1" output="screen" respawn="true"  />
+
+  </group>
+
+  <group ns="robot3">
+      <param name="namespace" value="robot3" />
+      <param name="number_of_robots" value="6" />
+  <node pkg="burgard" type="burgard_exploration_srv.py" name="burgard1" output="screen" respawn="true"  />
+
+  </group>
+
+ <group ns="robot4">
+      <param name="namespace" value="robot4" />
+      <param name="number_of_robots" value="6" />
+  <node pkg="burgard" type="burgard_exploration_srv.py" name="burgard1" output="screen" respawn="true"  />
+
+  </group>
+
+ <group ns="robot5">
+      <param name="namespace" value="robot5" />
+      <param name="number_of_robots" value="6" />
+  <node pkg="burgard" type="burgard_exploration_srv.py" name="burgard1" output="screen" respawn="true" />
+
+  </group>
+
+</launch>

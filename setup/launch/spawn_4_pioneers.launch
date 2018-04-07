@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<launch>
+  <include file="$(find setup)/launch/robot_spawn.launch">
+    <arg name="robot_name" value="robot0"/>
+    <arg name="xcoordinate" value="-5.625000"/>
+    <arg name="ycoordinate" value="7"/>
+  </include>
+
+  <include file="$(find setup)/launch/robot_spawn.launch">
+    <arg name="robot_name" value="robot1"/>
+    <arg name="xcoordinate" value="-6"/>
+    <arg name="ycoordinate" value="10"/>
+  </include> 
+
+  <include file="$(find setup)/launch/robot_spawn.launch">
+    <arg name="robot_name" value="robot2"/>
+    <arg name="xcoordinate" value="7"/>
+    <arg name="ycoordinate" value="4"/>
+  </include>
+  <include file="$(find setup)/launch/robot_spawn.launch">
+    <arg name="robot_name" value="robot3"/>
+    <arg name="xcoordinate" value="2"/>
+    <arg name="ycoordinate" value="0"/>
+  </include> 
+
+
+ <include file="$(find setup)/launch/robot_spawn.launch">
+    <arg name="robot_name" value="robot4"/>
+    <arg name="xcoordinate" value="-7"/>
+    <arg name="ycoordinate" value="-7"/>
+  </include>
+  <include file="$(find setup)/launch/robot_spawn.launch">
+    <arg name="robot_name" value="robot5"/>
+    <arg name="xcoordinate" value="8"/>
+    <arg name="ycoordinate" value="8"/>
+  </include>  
+</launch>
